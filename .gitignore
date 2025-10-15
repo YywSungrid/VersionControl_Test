@@ -58,9 +58,9 @@ slprj/
 # Ignore Simulink codegen folders
 codegen/
 
-#ignore txt
+#ignore txt, and excel
 *.txt
-
+*.xlsx
 #######newly added########################2025-10-15###
 
 # Simulink autosave and cache files
