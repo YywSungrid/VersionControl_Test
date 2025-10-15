@@ -1,0 +1,106 @@
+# Autosave files
+*.asv
+*.m~
+*.autosave
+*.slx.r*
+*.mdl.r*
+
+# Derived content-obscured files
+*.p
+
+# Compiled MEX files
+*.mex*
+
+# Packaged app and toolbox files
+*.mlappinstall
+*.mltbx
+
+# Deployable archives
+*.ctf
+
+# Generated helpsearch folders
+helpsearch*/
+
+# Code generation folders
+slprj/
+sccprj/
+codegen/
+
+# Cache files
+*.slxc
+
+# Cloud based storage dotfile
+.MATLABDriveTag
+
+# buildtool cache folder
+.buildtool/
+
+# SimBiology backup files
+*.sbproj.backup
+*.sbproj.bak
+
+#######setting for matlab####
+# Ignore backup and autosave files
+*.asv
+*.bak
+*.autosave
+
+# Ignore slprj (Simulink build files)
+slprj/
+
+# Ignore MATLAB cache
+*.mex*
+*.log
+*.mat (optional, unless intentionally used)
+*.mdl.rtw
+*.tlc
+
+# Ignore Simulink codegen folders
+codegen/
+
+#ignore txt
+*.txt
+
+#######newly added########################2025-10-15###
+
+# Simulink autosave and cache files
+*.asv
+*.autosave
+*.slxc
+*.slprj/
+*.mex* 
+*.mdl.rtw
+*.tlc
+
+# Code generation and build artifacts
+_build/
+codegen/
+*_ert_rtw/
+*.log
+*.mat
+*.stmf
+
+# MATLAB/Simulink temporary files
+.DS_Store
+*.mldatx
+*.backup
+*.sfun
+*.slx.autosave
+*.bak
+
+# Simulation outputs
+*.simlog
+*.slsmx
+*.slxc
+*.slcp
+*.slcov
+*.slp
+
+# Optional: ignore large output data files
+*.csv
+*.mat
+*.out
+*.txt
+
+# Custom
+project/cache/
