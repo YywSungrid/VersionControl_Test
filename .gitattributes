@@ -39,4 +39,6 @@
 *.mat   filter=lfs -text
 *.mltbx filter=lfs -text
 *.xlsx  filter=lfs -text
+#enable LFS lock 
+*.slx filter=lfs diff=matlab -text lockable
 *.slx filter=lfs diff=lfs merge=lfs -text
