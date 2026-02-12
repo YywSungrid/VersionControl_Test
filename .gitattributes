@@ -1,5 +1,6 @@
 * text=auto
 
+## regsiter these files to binary
 *.fig binary
 *.mat binary
 *.mdl binary diff merge=mlAutoMerge
@@ -13,7 +14,7 @@
 *.plprj binary
 *.sbproj binary
 *.sfx binary
-*.sldd binary
+*.sldd binary   merge=mlAutoMerge
 *.slreqx binary merge=mlAutoMerge
 *.slmx binary merge=mlAutoMerge
 *.sltx binary
@@ -30,15 +31,20 @@
 *.png binary
 *.xlsx binary
 ## Setting in matlab side
-*.sldd diff=matlab
-*.slx diff=matlab
-*.mdl diff=matlab
+#*.sldd diff=matlab
+#*.slx diff=matlab
+#*.mdl diff=matlab
 # LFS storage
 *.slx   filter=lfs -text
 *.sldd  filter=lfs -text
 *.mat   filter=lfs -text
 *.mltbx filter=lfs -text
 *.xlsx  filter=lfs -text
-#enable LFS lock 
+## Simulink mode enable LFS lock 
 *.slx filter=lfs diff=matlab -text lockable
+*.mdl filter=lfs diff=matlab -text lockable
+##Calibration or data
+*.mat filter=lfs  -text lockable
+##Data dictionary
+*.sldd filter=lfs -text lockable
 *.slx filter=lfs diff=lfs merge=lfs -text
