@@ -14,12 +14,12 @@
 *.plprj binary
 *.sbproj binary
 *.sfx binary
-*.sldd binary   merge=mlAutoMerge
+*.sldd binary   
 *.slreqx binary merge=mlAutoMerge
 *.slmx binary merge=mlAutoMerge
 *.sltx binary
 *.slxc binary
-*.slx binary merge=mlAutoMerge
+*.slx binary 
 *.slxp binary
 ## MATLAB Project metadata files use LF line endings
 /resources/project/**/*.xml text eol=lf
@@ -41,10 +41,15 @@
 *.mltbx filter=lfs -text
 *.xlsx  filter=lfs -text
 ## Simulink mode enable LFS lock 
-*.slx filter=lfs diff=matlab -text lockable
-*.mdl filter=lfs diff=matlab -text lockable
+#*.slx filter=lfs diff=matlab -text lockable
+#*.mdl filter=lfs diff=matlab -text lockable
+*.slx filter=lfs diff=mlDiff merge=mlAutoMerge -text lockable
+*.mdl filter=lfs diff=mlDiff merge=mlAutoMerge -text lockable
 ##Calibration or data
 *.mat filter=lfs  -text lockable
 ##Data dictionary
-*.sldd filter=lfs -text lockable
+#*.sldd filter=lfs -text lockable
+*.sldd filter=lfs diff=mlDiff merge=mlAutoMerge -text lockable
+# Requirements
+*.slreqx filter=lfs diff=mlDiff merge=mlAutoMerge -text lockable
 *.slx filter=lfs diff=lfs merge=lfs -text
